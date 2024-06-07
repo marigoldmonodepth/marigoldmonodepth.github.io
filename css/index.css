@@ -111,8 +111,10 @@ body {
 }
 
 .results-carousel {
-  overflow: hidden;
-  width: 100%;
+    visibility: hidden;
+    overflow: hidden;
+    width: 100%;
+    max-height: 10px;
 }
 
 .results-carousel .twoitem {
@@ -121,8 +123,9 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 95%;
-    margin: 5px;
+    height: 92%;
+    margin-left: 5px;
+    margin-right: 5px;
     overflow: hidden;
     border: 1px solid #bbb;
     border-radius: 10px;
@@ -131,25 +134,26 @@ body {
 }
 
 .slider-navigation-previous {
-    top: 47.5%;
-    margin-top: -15px;
+    top: 46%;
     left: calc(0% + 15px);
     box-shadow: 0 0 12px rgba(0, 0, 0, 1);
 }
 
 .slider-navigation-next {
-    top: 47.5%;
-    margin-top: -15px;
+    top: 46%;
     left: calc(100% - 15px - 42px);
     box-shadow: 0 0 12px rgba(0, 0, 0, 1);
 }
 
 .slider-pagination {
-    top: calc(100% - 22px);
+    top: calc(94% - 15px);
+    display: inline-block;
 }
+
 .slider-pagination .slider-page {
     background-color: #FFF;
     box-shadow: 0 0 4px rgba(0, 0, 0, 1);
+    display: inline-block;
 }
 
 .selectable{
