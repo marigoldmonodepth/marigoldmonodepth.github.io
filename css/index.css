@@ -123,7 +123,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 92%;
+    height: min(94%, calc(100% - 60px));
     margin-left: 5px;
     margin-right: 5px;
     overflow: hidden;
@@ -134,19 +134,19 @@ body {
 }
 
 .slider-navigation-previous {
-    top: 46%;
+    top: calc(0.5 * min(94%, calc(100% - 60px)));
     left: calc(0% + 15px);
     box-shadow: 0 0 12px rgba(0, 0, 0, 1);
 }
 
 .slider-navigation-next {
-    top: 46%;
+    top: calc(0.5 * min(94%, calc(100% - 60px)));
     left: calc(100% - 15px - 42px);
     box-shadow: 0 0 12px rgba(0, 0, 0, 1);
 }
 
 .slider-pagination {
-    top: calc(94% - 15px);
+    top: min(94%, calc(100% - 60px));
     display: inline-block;
 }
 
