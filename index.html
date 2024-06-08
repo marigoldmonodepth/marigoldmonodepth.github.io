@@ -137,7 +137,7 @@
                   <span class="icon">
                       &#129303;
                   </span>
-                  <span>Fast Demo (LCM)</span>
+                  <span>Interactive Demo (LCM)</span>
                 </a>
               </span>
               <!-- Hugging Face (diffusers). -->
@@ -205,7 +205,17 @@
 </section>
 
 
-<section class="hero is-light is-small">
+<section class="section pt-0 pb-4">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Gallery</h2>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-light is-small mt-4">
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel-horizontal" class="carousel results-carousel">
@@ -539,7 +549,7 @@
 </section>
 
 <section class="hero is-light is-small">
-  <div class="hero-body pt-0 pb-0">
+  <div class="hero-body pt-0">
     <div class="container">
       <div id="results-carousel-vertical" class="carousel results-carousel">
 
@@ -909,40 +919,6 @@
   </div>
 </section>
 
-<script>
-  $(window).on('load', function() {
-    bulmaCarousel.attach('#results-carousel-horizontal', {
-      slidesToScroll: 1,
-      slidesToShow: 3,
-      loop: true,
-      autoplay: true,
-    });
-
-    bulmaCarousel.attach('#results-carousel-vertical', {
-      slidesToScroll: 1,
-      slidesToShow: 5,
-      loop: true,
-      autoplay: true,
-    });
-
-    $(".twentytwenty-container-top").twentytwenty({
-      before_label: 'Input',
-      after_label: 'Ours',
-      default_offset_pct: 0.75,
-    });
-    $(".twentytwenty-container-bottom").twentytwenty({
-      before_label: 'LeRes',
-      after_label: 'Ours',
-      default_offset_pct: 0.5,
-    });
-
-    $('.carousel').css({
-      'max-height': '2000px',
-      'visibility': 'visible'
-    });
-  });
-</script>
-
 <section class="section">
   <div class="container is-max-desktop">
     <!-- Method. -->
@@ -1001,7 +977,146 @@
 </section>
 
 
-<section class="section pt-0" id="BibTeX">
+<section class="section pt-0 pb-2">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Testimonials</h2>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-light is-small mt-4">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel-testimonials" class="carousel results-carousel">
+        <div class="oneitem">
+          <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Sheeeeesh — you could cut your finger on those depth maps!</p>&mdash; Bilawal Sidhu (@bilawalsidhu) <a href="https://twitter.com/bilawalsidhu/status/1734712232414503075?ref_src=twsrc%5Etfw">December 12, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div class="oneitem">
+          <blockquote class="twitter-tweet"><p lang="ro" dir="ltr">kijai/ComfyUI-Marigold: Marigold depth estimation in ComfyUI <a href="https://t.co/c2JUYdq2GS">https://t.co/c2JUYdq2GS</a></p>&mdash; BLENDER SUSHI 🫶 X - 24/7 Blenderian (@jimmygunawanapp) <a href="https://twitter.com/jimmygunawanapp/status/1734847479471095899?ref_src=twsrc%5Etfw">December 13, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div class="oneitem">
+          <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Marigold 🏵️ is a new approach to depth estimation using diffusion models ✨ <br>Previously dense prediction transformers (DPT) were being used so I wanted to test this myself and I was pretty impressed 😍 <br>Try it here 👉 <a href="https://t.co/EdYTNL45ab">https://t.co/EdYTNL45ab</a> <a href="https://t.co/Vb4FMfFZnn">pic.twitter.com/Vb4FMfFZnn</a></p>&mdash; merve (@mervenoyann) <a href="https://twitter.com/mervenoyann/status/1734930382108156375?ref_src=twsrc%5Etfw">December 13, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div class="oneitem">
+          <blockquote class="twitter-tweet"><p lang="en" dir="ltr">The excellent Marigold depth model is now on Replicate:<a href="https://t.co/zbm3PIyA0l">https://t.co/zbm3PIyA0l</a><br><br>🙏 <a href="https://twitter.com/alaradirik?ref_src=twsrc%5Etfw">@alaradirik</a> for adding <a href="https://t.co/agIFW6o9pZ">pic.twitter.com/agIFW6o9pZ</a></p>&mdash; fofr (@fofrAI) <a href="https://twitter.com/fofrAI/status/1735610486840795287?ref_src=twsrc%5Etfw">December 15, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div class="oneitem">
+          <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Check out Marigold, a SOTA depth estimation model! <br><br>🔎 Diffusion models for depth estimation<br>🤗Open Source fine-tuning and inference code+models<br>🔥Zero-shot transfer to unseen data<br>🥳Impressive results!<br><br>Check it out! <a href="https://t.co/z6wJhV9foa">https://t.co/z6wJhV9foa</a> <a href="https://t.co/BOoYT139A3">pic.twitter.com/BOoYT139A3</a></p>&mdash; Omar Sanseviero (@osanseviero) <a href="https://twitter.com/osanseviero/status/1740392942924435950?ref_src=twsrc%5Etfw">December 28, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div class="oneitem">
+          <blockquote class="twitter-tweet"><p lang="en" dir="ltr">I created a cool JRPG3d AI scene while playing with <a href="https://twitter.com/tripoai?ref_src=twsrc%5Etfw">@tripoai</a> this holiday. It&#39;s probably the best 3dAI tool I had tried until the moment: <br>Midjourney concept-&gt; TripoAI -&gt; models/meshes<br>Midjourney -&gt; marigold(depth maps) -&gt; scenario<br>Mixamo -&gt; animation<a href="https://twitter.com/hashtag/GodotEngine?src=hash&amp;ref_src=twsrc%5Etfw">#GodotEngine</a> -&gt; scene. <a href="https://t.co/HOlsMdfCkK">pic.twitter.com/HOlsMdfCkK</a></p>&mdash; Lucas Ferreira da Silva (@bioinfolucas) <a href="https://twitter.com/bioinfolucas/status/1743881892456251455?ref_src=twsrc%5Etfw">January 7, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div class="oneitem">
+          <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Example of what AI generation can do in practice currently, from initial image (which is also generated) to a very detailed printable model, the level of detail mostly made possible with the Marigold depth estimation.<a href="https://twitter.com/hashtag/ai?src=hash&amp;ref_src=twsrc%5Etfw">#ai</a> <a href="https://twitter.com/hashtag/3dprinting?src=hash&amp;ref_src=twsrc%5Etfw">#3dprinting</a> <a href="https://twitter.com/hashtag/dragon?src=hash&amp;ref_src=twsrc%5Etfw">#dragon</a> <a href="https://twitter.com/hashtag/technology?src=hash&amp;ref_src=twsrc%5Etfw">#technology</a> <a href="https://t.co/UwuDQH1ssu">pic.twitter.com/UwuDQH1ssu</a></p>&mdash; Jukka Seppänen (@Kijaidesign) <a href="https://twitter.com/Kijaidesign/status/1744059033412055290?ref_src=twsrc%5Etfw">January 7, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div class="oneitem">
+          <blockquote class="twitter-tweet"><p lang="ja" dir="ltr"><a href="https://twitter.com/hashtag/Marigold?src=hash&amp;ref_src=twsrc%5Etfw">#Marigold</a>　で写真からdepth取って、blenderで３D化。背景に使えそう。　<a href="https://twitter.com/hashtag/UEFN?src=hash&amp;ref_src=twsrc%5Etfw">#UEFN</a> <a href="https://t.co/TOpQD45q7y">pic.twitter.com/TOpQD45q7y</a></p>&mdash; ahahaha_farm🐤@UEFN fireworker🎇 (@ahahaha_farm) <a href="https://twitter.com/ahahaha_farm/status/1744171508581487062?ref_src=twsrc%5Etfw">January 8, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div class="oneitem">
+          <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Nice results, <a href="https://twitter.com/AntonObukhov1?ref_src=twsrc%5Etfw">@AntonObukhov1</a> ! Some tests with <a href="https://twitter.com/sidefx?ref_src=twsrc%5Etfw">@sidefx</a> Houdini using non destructive method of 3d reconstruction ! <a href="https://t.co/aLA0AsckD2">https://t.co/aLA0AsckD2</a> works really fine!<br>Render example:<a href="https://t.co/GHS81beaKe">https://t.co/GHS81beaKe</a> <a href="https://t.co/pnWdENB4cx">pic.twitter.com/pnWdENB4cx</a></p>&mdash; cadudatoro (@cadudatoro) <a href="https://twitter.com/cadudatoro/status/1745002478771335603?ref_src=twsrc%5Etfw">January 10, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div class="oneitem">
+          <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">MariGoldでDepthを取得して <a href="https://twitter.com/hashtag/LookingGlass?src=hash&amp;ref_src=twsrc%5Etfw">#LookingGlass</a> で表示。 <br><br>腕、イチゴ、髪の毛辺りの立体感がなかなか良い<a href="https://twitter.com/hashtag/%E3%83%84%E3%83%A0%E3%83%95%E3%82%A1%E3%83%B3%E3%82%A2%E3%83%BC%E3%83%88?src=hash&amp;ref_src=twsrc%5Etfw">#ツムファンアート</a> <a href="https://twitter.com/hashtag/%E3%82%A2%E3%82%A4%E3%83%97%E3%83%AD?src=hash&amp;ref_src=twsrc%5Etfw">#アイプロ</a> <a href="https://twitter.com/hashtag/AI%E3%82%A4%E3%83%A9%E3%82%B9%E3%83%88?src=hash&amp;ref_src=twsrc%5Etfw">#AIイラスト</a> <a href="https://twitter.com/hashtag/AI%E3%82%A2%E3%82%A4%E3%83%89%E3%83%AB?src=hash&amp;ref_src=twsrc%5Etfw">#AIアイドル</a> <a href="https://t.co/snAIdqWvCG">https://t.co/snAIdqWvCG</a> <a href="https://t.co/intqRWABvy">pic.twitter.com/intqRWABvy</a></p>&mdash; ザバイオーネ (@z_zabaglione) <a href="https://twitter.com/z_zabaglione/status/1747934326166270046?ref_src=twsrc%5Etfw">January 18, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div class="oneitem">
+          <blockquote class="twitter-tweet"><p lang="en" dir="ltr">“Image to 3D-printer” 🤯 <a href="https://t.co/heKut7CDj6">https://t.co/heKut7CDj6</a></p>&mdash; Philipp Tsipman (@ptsi) <a href="https://twitter.com/ptsi/status/1737266099975036956?ref_src=twsrc%5Etfw">December 20, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div class="oneitem">
+          <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Excited to share PRISMA, my computational photography pipeline for applying multiple models and inferences on any image or video <a href="https://t.co/tebEZ8O6BY">https://t.co/tebEZ8O6BY</a> <a href="https://t.co/FyhJqobZ07">pic.twitter.com/FyhJqobZ07</a></p>&mdash; patricio gonzalez vivo (@patriciogv) <a href="https://twitter.com/patriciogv/status/1749420539477672079?ref_src=twsrc%5Etfw">January 22, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div class="oneitem">
+          <blockquote class="twitter-tweet" data-conversation="none"><p lang="en" dir="ltr">Used Marigold as a base to build CNC stl for wood carving. Required additional work in Blender for details but could not do it without Marigold. Thanks! <a href="https://t.co/BqRlpjBWOR">pic.twitter.com/BqRlpjBWOR</a></p>&mdash; Barber Shop Globes (@MinyardCathy) <a href="https://twitter.com/MinyardCathy/status/1754926721973797045?ref_src=twsrc%5Etfw">February 6, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div class="oneitem">
+          <blockquote class="twitter-tweet"><p lang="en" dir="ltr">left is marigold; right is depth anything<br>much higher resolution understanding; it passes the pepe&#39;s lips test <a href="https://t.co/7akpFy4h38">https://t.co/7akpFy4h38</a> <a href="https://t.co/PsGgfxpnx8">pic.twitter.com/PsGgfxpnx8</a></p>&mdash; dingboard (@dingboard_) <a href="https://twitter.com/dingboard_/status/1772361243921092753?ref_src=twsrc%5Etfw">March 25, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div class="oneitem">
+          <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Introducing 𝐌𝐚𝐫𝐢𝐠𝐨𝐥𝐝-𝐋𝐂𝐌🌼<br><br>🚀Lightning-FAST version of the popular sota depth estimator! Get results in seconds for images and 3D, or in minutes for videos.<br><br>Combines the power of Marigold&#39;s 10-step model with LCM, delivering stunning results in JUST One step. <a href="https://t.co/2pwFVQrpsm">pic.twitter.com/2pwFVQrpsm</a></p>&mdash; Gradio (@Gradio) <a href="https://twitter.com/Gradio/status/1772508897632219143?ref_src=twsrc%5Etfw">March 26, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div class="oneitem">
+          <blockquote class="twitter-tweet"><p lang="en" dir="ltr">AI Video Depth Estimation using Midjourney + RunwayML + Marigold-LCM<br><br>text to image: <a href="https://twitter.com/hashtag/midjourney?src=hash&amp;ref_src=twsrc%5Etfw">#midjourney</a><br>image to video: <a href="https://twitter.com/hashtag/runwayml?src=hash&amp;ref_src=twsrc%5Etfw">#runwayml</a><br>video to depth: <a href="https://twitter.com/hashtag/Marigolddepth?src=hash&amp;ref_src=twsrc%5Etfw">#Marigolddepth</a> <a href="https://t.co/Sjlh8S5exo">pic.twitter.com/Sjlh8S5exo</a></p>&mdash; kggmmm (@kgmvid) <a href="https://twitter.com/kgmvid/status/1774814126549643492?ref_src=twsrc%5Etfw">April 1, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div class="oneitem">
+          <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Start the week with a new 🧨 Diffusers release ❤️‍🔥 <br><br>This release includes the first non-generative tasks within the library -- depth estimation and normals&#39; prediction through Marigold 💐<br><br>Notes 📜<a href="https://t.co/mwEVRFyBv8">https://t.co/mwEVRFyBv8</a><br><br>1/5 <a href="https://t.co/kCA8zg9QXu">pic.twitter.com/kCA8zg9QXu</a></p>&mdash; Sayak Paul (@RisingSayak) <a href="https://twitter.com/RisingSayak/status/1795083868900311360?ref_src=twsrc%5Etfw">May 27, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div class="oneitem">
+          <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Marigold is indeed SOTA Depth Estimator available at present, and my latest controlnetllite is also trained based on it.<a href="https://t.co/KCwfFoU7Ou">https://t.co/KCwfFoU7Ou</a> <a href="https://t.co/skz6SOmth6">https://t.co/skz6SOmth6</a></p>&mdash; 青龍聖者 (@bdsqlsz) <a href="https://twitter.com/bdsqlsz/status/1795377945265262769?ref_src=twsrc%5Etfw">May 28, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div class="oneitem">
+          <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">Marigold🌼で、手持ちの写真の奥行を推定してUE5のNanite Tessellationで描画してみた。<br><br>これまで試した単眼深度推定モデルの中でも群を抜いてきれいな気がする。<br>近景はほとんど破綻がない一方で、遠景メインの風景はあまり学習対象になっていないのかも。 <a href="https://t.co/FPoHAVEyh8">https://t.co/FPoHAVEyh8</a> <a href="https://t.co/kx6lfgL6tn">pic.twitter.com/kx6lfgL6tn</a></p>&mdash; 麻場 健司／MocapFor(Streamer|All)開発 (@KenjiASABA) <a href="https://twitter.com/KenjiASABA/status/1733031212757983733?ref_src=twsrc%5Etfw">December 8, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div class="oneitem">
+          <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Wow I&#39;am really impressed by Marigold Depth Estimation just a quick extraction in Zbrush 4k texture <a href="https://twitter.com/hashtag/madewithunity?src=hash&amp;ref_src=twsrc%5Etfw">#madewithunity</a> <a href="https://twitter.com/hashtag/zbrush?src=hash&amp;ref_src=twsrc%5Etfw">#zbrush</a> <a href="https://twitter.com/hashtag/huggingface?src=hash&amp;ref_src=twsrc%5Etfw">#huggingface</a> <a href="https://twitter.com/hashtag/AIimage?src=hash&amp;ref_src=twsrc%5Etfw">#AIimage</a> <a href="https://twitter.com/hashtag/midjouney?src=hash&amp;ref_src=twsrc%5Etfw">#midjouney</a> <a href="https://twitter.com/hashtag/HDRP?src=hash&amp;ref_src=twsrc%5Etfw">#HDRP</a> <a href="https://t.co/7F9THbrzh0">pic.twitter.com/7F9THbrzh0</a></p>&mdash; Daniel Skaale (@DSkaale) <a href="https://twitter.com/DSkaale/status/1734430202732695850?ref_src=twsrc%5Etfw">December 12, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div class="oneitem">
+          <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Wow Marigold 🌼 depth estimation works extremely well! 🤯<br><br>And the best thing is that the checkpoints and code are fully available for commercial use!<br><br>Try it out yourself! ⬇️⬇️ <a href="https://t.co/H5eV6C680t">pic.twitter.com/H5eV6C680t</a></p>&mdash; Alex Carlier (@alexcarliera) <a href="https://twitter.com/alexcarliera/status/1738597850819526656?ref_src=twsrc%5Etfw">December 23, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div class="oneitem">
+          <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Image to depth using Marigold and ConfyUI<br><br>Then depth to 3D geometry in Blender <br><br>Super interesting stuff 🤯 <a href="https://t.co/ca0UbojxkP">pic.twitter.com/ca0UbojxkP</a></p>&mdash; A.I.Warper (@AIWarper) <a href="https://twitter.com/AIWarper/status/1736076088336691642?ref_src=twsrc%5Etfw">December 16, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div class="oneitem">
+          <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Made this video (🎶) with a Midjourney v6 image! Started by upscaling/refining with <a href="https://twitter.com/Magnific_AI?ref_src=twsrc%5Etfw">@Magnific_AI</a>, pulled a Marigold Depth Map from that in ComfyUI, then used as a displacement map in Blender where I animated this camera pass with some relighting and narrow depth of field.🧵1/12 <a href="https://t.co/Drqnzlbnl1">pic.twitter.com/Drqnzlbnl1</a></p>&mdash; CoffeeVectors (@CoffeeVectors) <a href="https://twitter.com/CoffeeVectors/status/1739001671651336280?ref_src=twsrc%5Etfw">December 24, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div class="oneitem">
+          <blockquote class="twitter-tweet"><p lang="en" dir="ltr">This stuff impressed me more than any other generational AI buzz around<br><br>Ridiculous how precise it works with things, doesn&#39;t create fake depth with the image on the screen, etc <a href="https://t.co/hg5hrt3l6m">https://t.co/hg5hrt3l6m</a> </p>&mdash; Sam Pavlovic (@SamZaNemesis) <a href="https://twitter.com/SamZaNemesis/status/1738714777323499812?ref_src=twsrc%5Etfw">December 24, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div class="oneitem">
+          <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Just added the SOTA Marigold depth estimator to <a href="https://twitter.com/fal_ai_data?ref_src=twsrc%5Etfw">@fal_ai_data</a>. <br><br>Check it out here: <a href="https://t.co/4CMnj4bSY5">https://t.co/4CMnj4bSY5</a> <a href="https://t.co/t6mRLwNiWQ">pic.twitter.com/t6mRLwNiWQ</a></p>&mdash; Jonathan Fischoff (@jfischoff) <a href="https://twitter.com/jfischoff/status/1740413512810176556?ref_src=twsrc%5Etfw">December 28, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div class="oneitem">
+          <blockquote class="twitter-tweet"><p lang="en" dir="ltr">I missed this. <br><br>Metaverse 2.0 foundational technology. <a href="https://t.co/SdUipUMix0">https://t.co/SdUipUMix0</a></p>&mdash; Robert Scoble (@Scobleizer) <a href="https://twitter.com/Scobleizer/status/1738718014076502252?ref_src=twsrc%5Etfw">December 24, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  $(window).on('load', function() {
+    bulmaCarousel.attach('#results-carousel-horizontal', {
+      slidesToScroll: 1,
+      slidesToShow: 3,
+      loop: true,
+      autoplay: false,
+    });
+
+    bulmaCarousel.attach('#results-carousel-vertical', {
+      slidesToScroll: 1,
+      slidesToShow: 5,
+      loop: true,
+      autoplay: false,
+    });
+
+    bulmaCarousel.attach('#results-carousel-testimonials', {
+      slidesToScroll: 1,
+      slidesToShow: 3,
+      loop: true,
+      autoplay: true,
+    });
+
+    $(".twentytwenty-container-top").twentytwenty({
+      before_label: 'Input',
+      after_label: 'Ours',
+      default_offset_pct: 0.75,
+    });
+
+    $(".twentytwenty-container-bottom").twentytwenty({
+      before_label: 'LeRes',
+      after_label: 'Ours',
+      default_offset_pct: 0.5,
+    });
+
+    $('.results-carousel').css({
+      'max-height': '2000px',
+      'visibility': 'visible'
+    });
+  });
+</script>
+
+<section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">Citation</h2>
     <pre class="selectable"><code>@InProceedings{ke2023repurposing,
@@ -1012,7 +1127,6 @@
 }</code></pre>
   </div>
 </section>
-
 
 <footer class="footer pt-4 pb-0">
   <div class="container">
