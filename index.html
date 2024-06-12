@@ -1113,6 +1113,28 @@
       'max-height': '2000px',
       'visibility': 'visible'
     });
+
+    twttr.ready(function (twttr) {
+      twttr.events.bind('rendered', function (event) {
+        if (event && event.target) {
+          tweetElement = event.target;
+          const container = tweetElement.closest('.results-carousel .oneitem');
+          const iframes = tweetElement.getElementsByTagName('iframe');
+          Array.from(iframes).forEach(iframe => {
+            new ResizeObserver(entries => {
+              for (let entry of entries) {
+                const containerWidth = container.clientWidth;
+                const iframeWidth = entry.target.offsetWidth;
+                const scaleFactor = containerWidth / iframeWidth;
+                entry.target.style.transform = `scale(${scaleFactor})`;
+                entry.target.style.transformOrigin = 'top left';
+                entry.target.style.width = `${100 / scaleFactor}%`;
+              }
+            }).observe(iframe);
+          });
+        }
+      });
+    });
   });
 </script>
 
