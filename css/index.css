@@ -137,13 +137,6 @@ body {
 .results-carousel .oneitem .twitter-tweet {
     margin-top: 0 !important;
     margin-bottom: 0 !important;
-    transition: none !important;
-    animation: none !important;
-}
-
-.results-carousel .oneitem iframe {
-    transition: none !important;
-    animation: none !important;
 }
 
 .results-carousel .twoitem {
